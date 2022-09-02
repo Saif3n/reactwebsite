@@ -1,38 +1,148 @@
-.App {
+
+body{
+  margin: 0;
   text-align: center;
+  font-family: 'Fira Code', monospace;
+  width:100%;
+  height:100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.space{
+  margin-top:3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.technical{
+  width: 100%;
+  margin-left: 30%;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 14%;
+  position:absolute;
+  color:#FFFFFF;
+  font-size:70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#text{
+  text-align: left;
+  width:45%;
+  font-size:150%;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight:400em;
+} 
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position:absolute;
+  
+}
+
+.parallax{
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:100%;
+  height:100%;
+
+  margin-top:30%;
+}
+.parallax:nth-child(1){
+  background-color:#ff1d1d;
+
+  height:2333300px;
 }
 
-.App-link {
-  color: #61dafb;
+.parallax:nth-child(2){
+  background-color:#0026ff;
+
+  height:200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.parallax:nth-child(3){
+  background-color:#00ff22;
+
+  height:200px;
+}
+
+
+.container h1:nth-child(1) {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 130%;
+  margin: 5% 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(40,end) forwards;
+  width:17%;
+}
+.container h1:nth-child(2) {
+  color: #ff1d1d;
+  opacity:0;
+  font-weight: 800;
+  font-size: 130%;
+  margin: 1% 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width:39%;
+  animation: shring-animation 2.5s steps(65,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
   }
-  to {
-    transform: rotate(360deg);
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid #ff1d1d;
   }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid #ff1d1d;
+  }
+  100% {
+    background-position: 400% 0;
+    opacity: 1;
+    border-right: 1px solid #ff1d1d;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid #FFFFFF;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+width: 100%;
+height: 100%;
+background-color: #232741;
+background-image: url('');
+background-size: cover;
+background-position: 50% 50%;
+background-repeat: no-repeat;
 }
