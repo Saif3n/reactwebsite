@@ -27,12 +27,7 @@ function App() {
               color: '#162747',
             },
             fpsLimit: 40,
-            interactivity: {
-              detectsOn: 'canvas',
-              events: {
-                resize: true
-              },
-            },
+            
             particles: {
               color: {
                 value: "#f1f1f1"

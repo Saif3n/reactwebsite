@@ -8,8 +8,25 @@ body{
 }
 
 
+img{
+  display:inline-block;
+  padding-left:1%;
+}
+
+.firstimg{
+  display:inline-block;
+  padding-left:0%;
+}
+
 .space{
   margin-top:3%;
+}
+
+.break{
+  margin-top:6%;
+}
+.spaceskill{
+  margin-top:2%;
 }
 
 .technical{
@@ -87,7 +104,7 @@ body{
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
-  width:39%;
+  width:38.8%;
   animation: shring-animation 2.5s steps(65,end) 2s forwards, blink .5s step-end infinite alternate;
 }
 
@@ -141,7 +158,6 @@ body{
 width: 100%;
 height: 100%;
 background-color: #232741;
-background-image: url('');
 background-size: cover;
 background-position: 50% 50%;
 background-repeat: no-repeat;
