@@ -1,12 +1,13 @@
-
 import React, { Component } from 'react';
 import { Form, Button } from "react-bootstrap";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { render } from '@testing-library/react';
+
 
 function Contact() {
+  const [validated, setValidated] = useState(false);
+
   const name = useRef("");
   const message = useRef("");
   const email = useRef("");
@@ -23,33 +24,47 @@ function Contact() {
     axios
       .post("https://localhost:7024/Register", payload)
       .then((response) => {
-        
+
       });
-  }
+  };
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
   return (
-    <div>
-      <legend>Contact</legend>
-      <form>
-        <Form.Group className="mb-3" controlId="formName">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" ref={name} />
+    <div class="contact">
+      <h1 class="contactheader">Contact me:</h1>
+      <Form validate={validated} onSubmit={handleSubmit}>
+        <Form.Group class="box" controlId="validationName">
+          <Form.Control required id="mb-3" type="text" placeholder="First Name*" ref={name} />
+  
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formMessage">
-          <Form.Label>Message</Form.Label>
-          <Form.Control type="text" ref={message} />
+        <br></br>
+        <Form.Group controlId="validationEmail">
+
+          <Form.Control required id="mb-3" placeholder="Email Address*" ref={email} />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control as="textarea" rows={3} ref={email} />
+        <br></br>
+        <Form.Group controlId="formMessage">
+
+          <Form.Control id="mb-5" placeholder="Message" type="text" ref={message} />
         </Form.Group>
 
-      </form>
-      <Button variant="primary" type="button" onClick={addUserHandler}>
+        <div class="space"></div>
+
+      </Form>
+      <Button class="contactbutton" type="submit" onClick={addUserHandler}>
         Submit
       </Button>
+      <div class="space"></div>
     </div>
   );
 
- }
+}
 
 export default Contact;

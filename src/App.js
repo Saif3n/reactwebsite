@@ -12,10 +12,7 @@ function App() {
   return <div className="App">
     
     <ParticleBackground />
-    <div class="container">
-      <h1>Hey, my name is Nicholas Wu.</h1>
-      <h1>I'm an aspiring Software Developer at the University of Auckland.</h1>
-    </div>
+    <AllUsers></AllUsers>
 
     <div class="technical">
       <h1>About me</h1>
@@ -52,19 +49,21 @@ function App() {
       <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" class="firstimg"></img>
       <img src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
 
+      <div class="space"></div>
+      <p id="text">This website was created using a ReactJS frontend, and a C# WebAPI backend.</p>
+      <div class="space"></div>
 
-      <div class="break"></div>
-
-      <h1>Contact me:</h1>
-
+      
     
-    <AllUsers></AllUsers>
+    <div class="break"></div>
+    
+    
     <Contact></Contact>
-
     </div>
+    
     <div class="break"></div>
 
-    
+
 
   </div>
   

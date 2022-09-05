@@ -114,6 +114,92 @@ img{
   width:39%;
   animation: shring-animation 2.5s steps(65,end) 2s forwards, blink .5s step-end infinite alternate;
 }
+.container h1:nth-child(3) {
+  color: #1fdf59;
+  opacity:0;
+  font-weight: 800;
+  font-size: 130%;
+  margin: 1% 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width:39%;
+  animation: animation 2.5s steps(65,end) 2s forwards;
+}
+.contact{
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+  width:44%;
+}
+.contactheader{
+  text-align: center;
+}
+#mb-3{
+  align-items:center;
+  background-color:#454547;
+  margin-left:10%;
+  height:30px;
+  width:80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius: 0.25rem;
+  
+}
+
+
+#mb-5{
+  background-color:#454547;
+  height:100px;
+  width:80%;
+  margin-left:10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius: 0.25rem;
+}
+.contactbutton{
+  margin-left:10%;
+  width:81%;
+  padding:1%;
+  background-color: #454547;
+  color:white;
+  font-family: 'Fira Code', monospace;
+  font-weight:bold;
+  font-size:150%;
+}
+
+@keyframes animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid #1fdf59;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    
+  }
+  100% {
+    background-position: 400% 0;
+    opacity: 1;
+    
+  }
+}
 
 @keyframes shring-animation {
   0% {
