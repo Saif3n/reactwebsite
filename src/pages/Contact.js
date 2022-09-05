@@ -11,10 +11,6 @@ function Contact() {
   const message = useRef("");
   const email = useRef("");
 
-
-
-  const navigate = useNavigate();
-
   function addUserHandler() {
     var payload = {
 
@@ -25,9 +21,9 @@ function Contact() {
     };
 
     axios
-      .post("https://localhost:7273/Register", payload)
+      .post("https://localhost:7024/Register", payload)
       .then((response) => {
-        navigate("/");
+        
       });
   }
   return (
@@ -56,4 +52,4 @@ function Contact() {
 
  }
 
-      export default Contact;
+export default Contact;
