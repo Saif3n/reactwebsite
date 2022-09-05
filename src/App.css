@@ -1,5 +1,5 @@
-
 body{
+  padding:0;
   margin: 0;
   text-align: center;
   font-family: 'Fira Code', monospace;
@@ -44,6 +44,7 @@ img{
   position:absolute;
   color:#FFFFFF;
   font-size:70%;
+  font-weight:lighter;
 }
 
 #text{
@@ -110,7 +111,7 @@ img{
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
-  width:38.8%;
+  width:39%;
   animation: shring-animation 2.5s steps(65,end) 2s forwards, blink .5s step-end infinite alternate;
 }
 

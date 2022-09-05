@@ -1,26 +1,42 @@
+
 import axios from "axios";
-import { useState, useEffect } from "react";
+import React, { Component } from "react"
 
-function AllUsers() {
+var output = "";
 
-    const [users, setUsers] = useState([])
+class AllUsers extends Component {
+    constructor() {
+        super()
+        this.state = {
+            name: ""
+        }
+    }
 
-    useEffect(() => {
+    componentDidMount() {
         axios.get("https://localhost:7024/GetAllUsers").then((response) => {
-            setUsers((existingData) => {
-                console.log(response.data[0].name)
 
-                return response.data;
-                
-            });
+            const users = response.data;
+            const length = response.data.length;
+            output = response.data[length-1].name;
+
+            this.setState({
+                name:output
+
+            })
+
         });
-    }, []);
+    }
 
-    return (<div>
-        <h1>Name:</h1> {}
-    </div>
-    );
+    render(){
+        return <div>
+            <h1>{[this.state.name]} last visited this site.</h1>
+        </div>
+    }
+
 }
+
+
+
 
 
 export default AllUsers;

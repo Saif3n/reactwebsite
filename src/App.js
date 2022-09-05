@@ -1,26 +1,14 @@
-
+import React, { Component } from 'react';
 import { Fragment, useState} from 'react';
 import './App.css';
 import ParticleBackground from './components/particleBackground';
 import AllUsers from './pages/AllUsers';
+import Contact from './pages/Contact';
 
 import axios from 'axios';
 
 function App() {
-  const[firstName, setFirstName] = useState("");
-  const[comment, setComment] = useState("");
-
-  const handleSubmit=(e)=>{
-    const data={
-      UserName : firstName,
-      UserComment : comment,
-      Type: "Add"
-    }
-    axios
-    .post('#{url}/api/Register')
-
-  }
-
+  
   return <div className="App">
     
     <ParticleBackground />
@@ -31,7 +19,7 @@ function App() {
 
     <div class="technical">
       <h1>About me</h1>
-      <p id="text">Originally a Computer Systems Engineering student, I was exposed to equal parts software and hardware. I immediately realised my love for software development when I was exposed to my
+      <p id="text">Originally a Computer Systems Engineering student starting in 2021, I was exposed to equal parts software and hardware. I immediately realised my love for software development when I was exposed to my
         first Object Oriented Programming course - SOFTENG281.
         <div class="space"></div>
         From then on, I knew the direction I wanted my career
@@ -43,7 +31,7 @@ function App() {
 
       <div class="break"></div>
       
-      <AllUsers></AllUsers>
+      
 
       <h1>Technical Skills</h1>
       <p id="text">Languages/Frameworks I'm comfortable coding in:</p>
@@ -60,21 +48,19 @@ function App() {
       <img src="https://img.shields.io/badge/MATLAB-99230f?style=for-the-badge&logoColor=white"></img>
       
       <div class="spaceskill"></div>
-      <p id="text">Currently learning:</p>
+      <p id="text">Currently learning/using:</p>
       <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" class="firstimg"></img>
       <img src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
 
 
       <div class="break"></div>
 
-    <Fragment>
-      <input type="text" value={firstName} placeholder="Enter First Name" onChange={(e) => setFirstName(e.target.value)}/>
-      <div class="spaceskill"></div>
-      <input type="text" value={comment} placeholder="Enter Comment" onChange={(e) => setComment(e.target.value)}/>
-      <div class="spaceskill"></div>
-      <button onClick ={(e)=> handleSubmit(e)}>Submit</button>
-      <div class="spaceskill"></div>
-    </Fragment>
+      <h1>Contact me:</h1>
+
+    
+    <AllUsers></AllUsers>
+    <Contact></Contact>
+
     </div>
     <div class="break"></div>
 

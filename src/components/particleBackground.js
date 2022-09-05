@@ -30,7 +30,7 @@ function App() {
             
             particles: {
               color: {
-                value: "#f1f1f1"
+                value: "#8f8360"
               },
               number: {
     
