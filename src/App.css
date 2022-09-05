@@ -7,7 +7,13 @@ body{
   height:100%;
 }
 
-
+.TEST{
+  font-size:90px;
+  color:#FFFFFF;
+  border-style:solid;
+  border-color:black;
+  border-width:5px;
+}
 img{
   display:inline-block;
   padding-left:1%;

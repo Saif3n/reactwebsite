@@ -6,13 +6,20 @@ function AllUsers() {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        axios.get("https://localhost:8080/api/GetAllUsers").then((response) => {
+        axios.get("https://localhost:7024/GetAllUsers").then((response) => {
             setUsers((existingData) => {
+                console.log(response.data[0].name)
+
                 return response.data;
+                
             });
         });
     }, []);
-    return <></>
+
+    return (<div>
+        <h1>Name:</h1> {}
+    </div>
+    );
 }
 
 

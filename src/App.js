@@ -22,7 +22,7 @@ function App() {
   }
 
   return <div className="App">
-    <AllUsers />
+    
     <ParticleBackground />
     <div class="container">
       <h1>Hey, my name is Nicholas Wu.</h1>
@@ -43,6 +43,7 @@ function App() {
 
       <div class="break"></div>
       
+      <AllUsers></AllUsers>
 
       <h1>Technical Skills</h1>
       <p id="text">Languages/Frameworks I'm comfortable coding in:</p>
@@ -75,6 +76,8 @@ function App() {
       <div class="spaceskill"></div>
     </Fragment>
     </div>
+    <div class="break"></div>
+
 
 
   </div>
