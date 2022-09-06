@@ -22,7 +22,7 @@ function Contact() {
     };
 
     axios
-      .post("https://localhost:7024/Register", payload)
+      .post("https://personalbackendreact.azurewebsites.net/Register", payload)
       .then((response) => {
 
       });

@@ -13,7 +13,7 @@ class AllUsers extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://localhost:7024/GetAllUsers").then((response) => {
+        axios.get("https://personalbackendreact.azurewebsites.net/GetAllUsers").then((response) => {
 
             const users = response.data;
             const length = response.data.length;
