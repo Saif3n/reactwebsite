@@ -52,7 +52,7 @@ function App() {
       <div class="space"></div>
       <p id="text">This website was created using a ReactJS frontend, and a C# WebAPI backend.</p>
       <div class="space"></div>
-
+      <p id="text">I'd love to chat, so please send me an email at nicholaswu498@gmail.com</p>
       
     
     <div class="break"></div>
