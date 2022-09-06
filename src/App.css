@@ -141,6 +141,7 @@ img{
   margin-left:10%;
   height:30px;
   width:80%;
+  color:white;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -154,6 +155,7 @@ img{
 
 
 #mb-5{
+  color:white;
   background-color:#454547;
   height:100px;
   width:80%;
