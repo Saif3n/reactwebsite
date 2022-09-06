@@ -12,6 +12,15 @@ function Contact() {
   const message = useRef("");
   const email = useRef("");
 
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
   function addUserHandler() {
     var payload = {
 
@@ -27,32 +36,24 @@ function Contact() {
 
       });
   };
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
-  };
+  
   return (
     <div class="contact">
-      <h1 class="contactheader">Contact me (Work in Progress)</h1>
+      <h1 class="contactheader">Contact me:</h1>
       <Form validate={validated} onSubmit={handleSubmit}>
         <Form.Group class="box" controlId="validationName">
-          <Form.Control required id="mb-3" type="text" placeholder="First Name*" ref={name} />
-  
+          <Form.Control required ref={name} id="mb-3" type="text" placeholder=" First Name*"  />
         </Form.Group>
         <br></br>
         <Form.Group controlId="validationEmail">
 
-          <Form.Control required id="mb-3" placeholder="Email Address*" ref={email} />
+          <Form.Control required type={email} id="mb-3" placeholder=" Email Address*" defaultValue="nicholaswu498@gmail.com"  />
+          
         </Form.Group>
         <br></br>
         <Form.Group controlId="formMessage">
 
-          <Form.Control id="mb-5" placeholder="Message" type="text" ref={message} />
+          <Form.Control as="textarea" id="mb-5" placeholder=" Message" type="text" ref={message} />
         </Form.Group>
 
         <div class="space"></div>

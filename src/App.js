@@ -26,9 +26,7 @@ function App() {
 
       </p>
 
-      <div class="break"></div>
-      
-      
+      <div class="space"></div>
 
       <h1>Technical Skills</h1>
       <p id="text">Languages/Frameworks I'm comfortable coding in:</p>
@@ -50,13 +48,10 @@ function App() {
       <img src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
 
       <div class="space"></div>
-      <p id="text">This website was created using a ReactJS frontend, and a C# WebAPI backend.</p>
+      <strong>This website was created using a ReactJS frontend, and a C# WebAPI backend.</strong>
       <div class="space"></div>
-      <p id="text">I'd love to chat, so please send me an email at nicholaswu498@gmail.com</p>
-      
     
-    <div class="break"></div>
-    
+
     
     <Contact></Contact>
     </div>
