@@ -31,7 +31,7 @@ function Contact() {
   return (
     <div class="contact">
       <h1 class="contactheader">Contact me:</h1>
-      <Form validate={validated} onSubmit={handleSubmit}>
+      <Form>
         <Form.Group class="box" controlId="validationName">
           <Form.Control required ref={name} id="mb-3" type="text" placeholder=" First Name*"  />
         </Form.Group>
