@@ -58,7 +58,7 @@ function Contact() {
         <div class="space"></div>
 
       </Form>
-      <Button class="contactbutton" type="submit" onClick={addUserHandler}>
+      <Button id="contactbutton" type="submit" onClick={addUserHandler}>
         Submit
       </Button>
       <div class="space"></div>
