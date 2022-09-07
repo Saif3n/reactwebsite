@@ -16,7 +16,7 @@ function App() {
       <h1>About me</h1>
       <p class="text">I'm a penultimate Computer Science student passionate about full-stack languages and frameworks. I'm actively implementing these technologies into my own personal projects which I enjoy showing to friends and family.
         <div class="space"></div>
-        In my free time I love playing badminton, walking my dog, and exploring nifty cafes around Auckland.
+        In my free time I love playing badminton, walking my border collie, and exploring nifty cafes around Auckland.
         <div class="space"></div>
 
 
@@ -46,7 +46,7 @@ function App() {
     
     </div>
 
-   
+   <br></br>
     <div class="bottom"><Contact></Contact></div>
 
 
