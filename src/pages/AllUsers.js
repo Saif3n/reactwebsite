@@ -2,6 +2,7 @@
 import axios from "axios";
 import React, { Component } from "react"
 import logo from "./profile.png"
+import Typewriter from 'typewriter-effect';
 var output = "";
 
 class AllUsers extends Component {
@@ -17,7 +18,7 @@ class AllUsers extends Component {
 
             const users = response.data;
             output = response.data.name;
-
+            console.log(this.state.name);
             this.setState({
                 name: output
 
@@ -26,19 +27,41 @@ class AllUsers extends Component {
         });
     }
 
+
     render() {
-        return (
-            <div class="container">
-                <h1>Hey, my name is Nicholas Wu.</h1>
-                <h1>I'm an aspiring Software Developer at the University of Auckland.</h1>
-                <h1>This site was last visited by {[this.state.name]}.</h1>
+        return (<div><div class="break"></div><img class="profile" src={logo}></img>
+            <br></br>
+
+            <div class="type">    
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter.changeDelay(40).typeString('Hey, my name\'s Nicholas Wu.')
+                        .start();
+                }} />
+        
             </div>
+            <div class="type2">
+            <Typewriter
+                class ="secondtype" onInit={(typewriter) => {
+                    typewriter.
+                        changeDelay(60)
+                        .typeString("I'm an aspiring Software Developer at the University of Auckland.")
+                        .pauseFor(2500)
+                        .deleteAll(60)
+                        .typeString("Welcome to my website!")
+                        .start();
+                }} />
+            </div>
+
+            
+            
+
+        </div>
+
         )
     }
 
 }
-
-
 
 
 

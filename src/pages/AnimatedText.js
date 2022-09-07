@@ -1,10 +1,35 @@
 
 import axios from "axios";
 import React, { Component } from "react"
+import logo from "./profile.png"
+import Typewriter from 'typewriter-effect';
+var output = "";
 
+class AnimatedText extends Component {
+    constructor() {
+        super()
+        this.state = {
+            name: ""
+        }
+    }
 
+    componentDidMount() {
+        axios.get("https://personalbackendreact.azurewebsites.net/GetAllUsers").then((response) => {
 
+            const users = response.data;
+            output = response.data.name;
+            console.log(this.state.name);
+            this.setState({
+                name: output
 
+            })
 
+        });
+    }
 
-export default AllUsers;
+    render(){
+        return (<div class="visited"><p>{[this.state.name]}, was the last user to leave a message.</p></div>)
+    }
+
+}
+export default AnimatedText;

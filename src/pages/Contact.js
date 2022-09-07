@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Button } from "react-bootstrap";
 import { useRef, useState } from "react";
-
 import axios from "axios";
 
 
@@ -63,7 +62,7 @@ function Contact() {
         Submit
       </Button>
       <div class="space"></div>
-      <p class="footer">This website was created using a ReactJS frontend, and a C# WebAPI backend.</p>
+      <p class="footer">This website was created using a ReactJS frontend, and a C# WebAPI backend (hosted on Microsoft Azure).</p>
       <div class="space"></div>
     </div>
 

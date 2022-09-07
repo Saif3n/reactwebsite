@@ -4,13 +4,17 @@ import './App.css';
 import ParticleBackground from './components/particleBackground';
 import AllUsers from './pages/AllUsers';
 import Contact from './pages/Contact';
+import Typewriter from 'typewriter-effect';
+import AnimatedText from './pages/AnimatedText';
 
 function App() {
   
   return <div className="App">
-    
+
     <ParticleBackground />
     <AllUsers></AllUsers>
+
+    
 
     <div class="technical">
       <h1>About me</h1>
@@ -47,9 +51,9 @@ function App() {
     </div>
 
    <br></br>
-    <div class="bottom"><Contact></Contact></div>
+    <div class="bottom"><Contact></Contact><AnimatedText></AnimatedText></div>
 
-
+ 
   </div>
   
 }
