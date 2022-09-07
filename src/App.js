@@ -5,8 +5,6 @@ import ParticleBackground from './components/particleBackground';
 import AllUsers from './pages/AllUsers';
 import Contact from './pages/Contact';
 
-import axios from 'axios';
-
 function App() {
   
   return <div className="App">
@@ -16,18 +14,16 @@ function App() {
 
     <div class="technical">
       <h1>About me</h1>
-      <p class="text">Originally a Computer Systems Engineering student starting in 2021, I was exposed to equal parts software and hardware. I immediately realised my love for software development when I was exposed to my
-        first Object Oriented Programming course - SOFTENG281.
+      <p class="text">I'm a penultimate Computer Science student passionate about full-stack languages and frameworks. I'm actively implementing these technologies into my own personal projects which I enjoy showing to friends and family.
         <div class="space"></div>
-        From then on, I knew the direction I wanted my career
-        to go, and the steps that could help me achieve it.
+        In my free time I love playing badminton, walking my dog, and exploring nifty cafes around Auckland.
         <div class="space"></div>
-        I'm now a penultimate Computer Science student passionate about backend languages/frameworks.
+
 
       </p>
 
       <div class="break"></div>
-
+      
       <h1>Technical Skills</h1>
       <p class="text">Languages/Frameworks I'm comfortable coding in:</p>
       <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" class = "firstimg"></img>
@@ -49,9 +45,9 @@ function App() {
 
     
     </div>
-    <div class="bottom">
-    <Contact></Contact>
-    </div>
+
+   
+    <div class="bottom"><Contact></Contact></div>
 
 
   </div>

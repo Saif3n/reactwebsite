@@ -37,7 +37,8 @@ function Contact() {
     setValidated(true);
   };
   return (
-    <div class="contact">
+    
+      <div class="contact">
       <h1 class="contactheader">Contact me:</h1>
       <Form validate={validated} onSubmit={handleSubmit}>
         <Form.Group class="box" controlId="validationName">
@@ -65,6 +66,7 @@ function Contact() {
       <p class="footer">This website was created using a ReactJS frontend, and a C# WebAPI backend.</p>
       <div class="space"></div>
     </div>
+
   );
 
 }
