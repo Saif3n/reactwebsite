@@ -29,7 +29,10 @@ class AllUsers extends Component {
 
 
     render() {
-        return (<div><div class="break"></div><img class="profile" src={logo}></img>
+        return (<div><div class="break"></div>
+        <a href="https://www.linkedin.com/in/nicholas-wu-6b64b5233/">
+        <img class="profile" src={logo}></img>
+        </a>
             <br></br>
 
             <div class="type">    
