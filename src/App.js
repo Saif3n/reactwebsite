@@ -18,7 +18,8 @@ function App() {
 
     <div class="technical">
       <h1>About me</h1>
-      <p class="text">I'm a penultimate Computer Science student passionate about full-stack languages and frameworks. I'm actively implementing these technologies into my own personal projects which I enjoy showing to friends and family.
+      <p class="text">I'm a penultimate Computer Science student passionate about full-stack languages and frameworks. I'm actively implementing these technologies into my own personal projects which I enjoy showing to friends and family. 
+      <div class="space"></div>As a former Computer Systems Engineering student exposed to equal parts hardware and equal parts software, I decided to pivot my studies towards software development after realising my love for it in an Object Oriented Programming Course (SOFTENG281).
         <div class="space"></div>
         In my free time I love playing badminton, walking my border collie, and exploring nifty cafes around Auckland.
         <div class="space"></div>
