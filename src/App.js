@@ -33,10 +33,13 @@ function App() {
       <p class="text">Languages/Frameworks I'm comfortable coding in:</p>
       <div class="skills">
         <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" class="firstimg"></img>
+        
         <img src="https://img.shields.io/badge/.net-512DB4?style=for-the-badge&logo=.net&logoColor=white"></img>
+        <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></img>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"></img>
         <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
         <img src="https://img.shields.io/badge/css-%23E34F26.svg?style=for-the-badge&logo=css3&logoColor=white"></img>
+        
       </div>
       <div class="spaceskill"></div>
         <p class="text">Languages/Frameworks I have prior experience in:</p>
@@ -49,8 +52,8 @@ function App() {
       <p class="text">Currently learning/using:</p>
 
       <div class="skills">
-        <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" class="firstimg"></img>
-        <img src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+        
+        <img src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB" class="firstimg"></img>
       </div>
 
     </div>
