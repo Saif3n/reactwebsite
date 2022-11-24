@@ -18,7 +18,6 @@ class AnimatedText extends Component {
 
             const users = response.data;
             output = response.data.name;
-            console.log(this.state.name);
             this.setState({
                 name: output
 
@@ -28,7 +27,7 @@ class AnimatedText extends Component {
     }
 
     render(){
-        return (<div class="visited"><p>{[this.state.name]}, was the last user to leave a message.</p></div>)
+        return (<div className="visited"><p>{[this.state.name]}, was the last user to leave a message.</p></div>)
     }
 
 }

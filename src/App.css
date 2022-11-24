@@ -40,6 +40,24 @@ img {
   position:absolute;
 }
 
+@media only screen and (max-width: 670px) {
+  img:first-of-type{
+    margin-top:0%;
+  }
+  #badge {
+    display: block;
+    padding-left: 0%;
+    margin-top:2%;
+    margin-bottom:2%;
+
+  }
+  .firstimg{
+    margin-top:1%;
+    margin-bottom:0%;
+  }
+}
+
+
 .spaceskill {
   margin-top: 2%;
 }
