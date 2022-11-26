@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Fragment, useState } from 'react';
+import React from 'react';
+
 import './App.css';
 import ParticleBackground from './components/particleBackground';
 import AllUsers from './pages/AllUsers';
 import Contact from './pages/Contact';
-import Typewriter from 'typewriter-effect';
+
 import AnimatedText from './pages/AnimatedText';
 
 function App() {

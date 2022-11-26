@@ -1,8 +1,7 @@
 
 import axios from "axios";
 import React, { Component } from "react"
-import logo from "./profile.png"
-import Typewriter from 'typewriter-effect';
+
 var output = "";
 
 class AnimatedText extends Component {
@@ -16,7 +15,6 @@ class AnimatedText extends Component {
     componentDidMount() {
         axios.get("https://personalbackendreact.azurewebsites.net/GetAllUsers").then((response) => {
 
-            const users = response.data;
             output = response.data.name;
             this.setState({
                 name: output
