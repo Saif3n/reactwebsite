@@ -11,9 +11,8 @@ function Contact() {
   const message = useRef("");
   const email = useRef("");
 
-  const addUserHandler = (e) => {
-
-
+  const addUserHandler = (event) => {
+    event.preventDefault();
     var payload = {
 
       Name: name.current.value,
@@ -22,30 +21,24 @@ function Contact() {
 
     };
 
-    if (name.current.value.length > 0 && email.current.value.length > 0){
-    axios
+    if (name.current.value.length > 0 && email.current.value.length > 0 && email.current.value.includes('@')){
+
+      axios
       .post("https://personalbackendreact.azurewebsites.net/Register", payload)
       .then((response) => {
         
       });
+      alert("Thanks for leaving a message "+name.current.value+", I'll aim to get back to you as soon as possible!")
     }
   };
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
 
-    setValidated(true);
-  };
   return (
     
       <div className="contact">
       <h1 className="contactheader">Contact me:</h1>
-      <Form >
-        <Form.Group controlId="validationCustomUsername">
-          <Form.Control required  type="text" placeholder=" Name*" ref={name} />
+      <Form onSubmit={addUserHandler}>
+        <Form.Group>
+          <Form.Control required type="text" placeholder=" Name*" ref={name} />
         </Form.Group>
         <br></br>
         <Form.Group>
@@ -60,7 +53,7 @@ function Contact() {
         <div className="space"></div>
 
       
-      <Button variant="primary" type="submit" onClick={addUserHandler}>
+      <Button variant="primary" type="submit">
         Submit
       </Button>
       </Form>
