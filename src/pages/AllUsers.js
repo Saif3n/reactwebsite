@@ -1,5 +1,3 @@
-
-
 import React, { Component } from "react"
 import logo from "./profile.png"
 import Typewriter from 'typewriter-effect';
@@ -33,10 +31,6 @@ class AllUsers extends Component {
                         .start();
                 }} />
             </div>
-
-            
-            
-
         </div>
 
         )
