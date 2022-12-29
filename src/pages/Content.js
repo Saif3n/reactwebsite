@@ -19,28 +19,28 @@ function Content() {
                 <h1>Technical Skills</h1>
                 <p className="text">Languages/Frameworks I can code comfortably in:</p>
                 <div className="skills">
-                    <img id="badge" src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" className="firstimg"></img>
+                    <img id="badge" alt="cs" src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" className="firstimg"></img>
 
-                    <img id="badge" src="https://img.shields.io/badge/.net-512DB4?style=for-the-badge&logo=.net&logoColor=white"></img>
-                    <img id="badge" src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></img>
-                    <img id="badge" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"></img>
-                    <img id="badge" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
-                    <img id="badge" src="https://img.shields.io/badge/css-%23E34F26.svg?style=for-the-badge&logo=css3&logoColor=white"></img>
+                    <img id="badge" alt="net" src="https://img.shields.io/badge/.net-512DB4?style=for-the-badge&logo=.net&logoColor=white"></img>
+                    <img id="badge" alt="js" src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></img>
+                    <img id="badge" alt="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"></img>
+                    <img id="badge" alt="html" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
+                    <img id="badge" alt="css" src="https://img.shields.io/badge/css-%23E34F26.svg?style=for-the-badge&logo=css3&logoColor=white"></img>
 
                 </div>
                 <div className="spaceskill"></div>
                 <p className="text">Languages/Frameworks I have prior experience in:</p>
                 <div className="skills">
-                    <img id="badge" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" className="firstimg"></img>
-                    <img id="badge" src="https://img.shields.io/badge/c (Hardware)-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"></img>
-                    <img id="badge" src="https://img.shields.io/badge/MATLAB-99230f?style=for-the-badge&logoColor=white"></img>
+                    <img id="badge" alt="c" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" className="firstimg"></img>
+                    <img id="badge" alt="c-hardware" src="https://img.shields.io/badge/c (Hardware)-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"></img>
+                    <img id="badge" alt="matlab" src="https://img.shields.io/badge/MATLAB-99230f?style=for-the-badge&logoColor=white"></img>
                 </div>
                 <div className="spaceskill"></div>
                 <p className="text">Currently learning/using:</p>
 
                 <div className="skills">
 
-                    <img id="badge" src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB" className="firstimg"></img>
+                    <img id="badge" alt="react" src="https://img.shields.io/badge/react-19B165?style=for-the-badge&logo=react&logoColor=%2361DAFB" className="firstimg"></img>
                 </div>
 
             </div>

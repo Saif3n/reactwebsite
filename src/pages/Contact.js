@@ -2,6 +2,7 @@ import React from 'react';
 import { Form, Button } from "react-bootstrap";
 import { useRef, useState, useEffect } from "react";
 import { send } from 'emailjs-com';
+import DOMPurify from 'dompurify';
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -13,9 +14,12 @@ function Contact() {
 
   const [value, setValue] = useState('');
 
+  // if user tries xss, forces user back to previous page in their history
+
+
 
   useEffect(() => {
-    axios.get("https://personalbackendreact.azurewebsites.net/GetAllUsers").then((response) => {
+    axios.get("https://personalbackendreact.azurewebsites.net/GetLastUser").then((response) => {
       setValue(response.data.name + " was the last user to leave a message.");
     });
   }, []);
@@ -23,7 +27,6 @@ function Contact() {
 
   const addUserHandler = (event) => {
     event.preventDefault();
-
 
     let payload = {
 
@@ -33,8 +36,18 @@ function Contact() {
 
     };
 
-    if (name.current.value.length > 0 && email.current.value.length > 0 && email.current.value.includes('@')) {
+    for (let element in payload){
 
+      if (payload[element] !== DOMPurify.sanitize(payload[element])){
+        alert("Please leave, this site is not welcome to XSSers.")
+        window.location.href = 'https://google.com';
+        return;
+      }
+      payload[element] = DOMPurify.sanitize(payload[element]);
+    }
+
+    if (name.current.value.length > 0 && email.current.value.length > 0 && email.current.value.includes('@')) {
+      
       send(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
@@ -55,7 +68,7 @@ function Contact() {
           console.log('Azure post unsuccessful.', error.status, error.text);
         });
 
-      alert("Thanks for leaving a message " + name.current.value + ", I'll aim to get back to you as soon as possible!")
+      alert("Thanks for leaving a message " + DOMPurify.sanitize(name.current.value) + ", I'll aim to get back to you as soon as possible!")
     }
   };
 

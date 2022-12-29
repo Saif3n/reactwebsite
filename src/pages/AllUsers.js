@@ -8,7 +8,7 @@ class AllUsers extends Component {
     render() {
         return (<div><div className="break"></div>
         <a href="https://www.linkedin.com/in/nicholas-wu-6b64b5233/">
-        <img className="profile" src={logo}></img>
+        <img className="profile" src={logo} alt="profilepicture"></img>
         </a>
             <br></br>
 
