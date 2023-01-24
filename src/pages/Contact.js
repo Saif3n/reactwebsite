@@ -20,7 +20,7 @@ function Contact() {
 
   useEffect(() => {
     axios.get("https://personalbackendreact.azurewebsites.net/GetLastUser").then((response) => {
-      setValue(response.data.name + " was the last user to leave a message.");
+      setValue(DOMPurify.sanitize(response.data.name) + " was the last user to leave a message.");
     });
   }, []);
   
@@ -37,7 +37,7 @@ function Contact() {
     };
 
     for (let element in payload){
-
+      // Payload is also sanitized in my backend, so don't try :) 
       if (payload[element] !== DOMPurify.sanitize(payload[element])){
         alert("Please leave, this site is not welcome to XSSers.")
         window.location.href = 'https://google.com';

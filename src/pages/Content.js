@@ -6,7 +6,7 @@ function Content() {
         <>
             <div className="technical">
                 <h1>About me</h1>
-                <p className="text">I'm a penultimate Computer Science student passionate about full-stack languages and frameworks. I'm actively implementing these technologies into my own personal projects which I enjoy showing to friends and family. </p>
+                <p className="text">I'm a final year Computer Science student passionate about full-stack languages and frameworks. I'm actively implementing these technologies into my own personal projects which I enjoy showing to friends and family. </p>
                 <div className="space"></div>
                 <div className="space"></div>
                 <p className="text">In my free time I love playing badminton, walking my border collie, and exploring nifty cafes around Auckland.</p>
