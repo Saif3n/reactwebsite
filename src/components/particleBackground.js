@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react"
-import Particles from 'react-tsparticles'
+import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles";
 
 function App() {
-  const [mode, setMode] = useState("dark"); // add mode state variable and set it to "light" by default
-  const [colour, setColour] = useState("#162747"); // set initial colour state variable
-  const [particles, setParticles] = useState("#8f8360"); // set initial particles state variable
-  
-  
+  const [mode, setMode] = useState("dark"); 
+  const [colour, setColour] = useState("#162747");
+  const [particles, setParticles] = useState("#8f8360"); 
+  const [symbol, setSymbol] = useState("#FFED00")
+
   const particlesInit = async (main) => {
 
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // this loads the tsparticles package bundle, it"s the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
@@ -28,6 +28,7 @@ function App() {
     if (mode === "light") {
       setColour("#162747");
       setParticles("#8f8360");
+      setSymbol("#FFED00");
 
       const element = document.querySelector(".bottom-toggle");
       const element2 = document.querySelector(".contactheader-toggle");
@@ -45,7 +46,8 @@ function App() {
 
     } else {
       setColour("#DEE4F7");
-      setParticles("#56960D");
+      setParticles("#76CE12");
+      setSymbol("#000000");
 
       const element = document.querySelector(".bottom");
       const element2 = document.querySelector(".contactheader");
@@ -68,13 +70,27 @@ function App() {
 
   // use the mode state variable to set the colour and particles variables
   useEffect(() => {
-    
+
   }, [mode]);
 
   return (
     <div className="particles">
       <div className="button" onClick={triggerLightMode}>
-        <p>hi</p>
+        <div className="sun">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <circle cx="12" cy="12" r="5" fill={symbol} />
+
+            <path d="M 12 2 L 12 6" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 12 18 L 12 22" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 4.93 4.93 L 7.07 7.07" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 16.93 16.93 L 19.07 19.07" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 4.93 19.07 L 7.07 16.93" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 16.93 7.07 L 19.07 4.93" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 2 12 L 6 12" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 18 12 L 22 12" stroke={symbol} stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+
       </div>
       <Particles
         style={{ zIndex: -1 }}
