@@ -10,7 +10,6 @@ import Welcome from './pages/Welcome';
 function App() {
 
   return <div className="App">
-
     <ParticleBackground/>
     <Welcome/>
     <AllUsers/>

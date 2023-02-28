@@ -5,6 +5,7 @@ html, body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   width: 100%;
   height: 100%;
+
 }
 
 .Typewriter{
@@ -79,12 +80,35 @@ img {
   font-size:3vh;
   font-weight:bold;
   display:block;
-
 }
+
+
+.type-toggle{
+  margin-top:3%;
+  position:relative;
+  color:#0d5ace;
+  text-align:center;
+  width:100%;
+  font-size:3vh;
+  font-weight:bold;
+  display:block;
+}
+
 .type2{
   display:block;
   position:relative;
   color:#ff1d1d;
+  text-align:center;
+  width:100%;
+  font-size:3vh;
+  font-weight:bold;
+}
+
+
+.type2-toggle{
+  display:block;
+  position:relative;
+  color:#e07800;
   text-align:center;
   width:100%;
   font-size:3vh;
@@ -98,6 +122,19 @@ img {
   text-align: left;
   margin-top: 5%;
   color: #FFFFFF;
+  font-size: 70%;
+  font-weight: lighter;
+  position:relative;
+  display: block;
+}
+
+.technical-toggle {
+  width: 70%;
+  margin-left: 26%;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 5%;
+  color: #000000;
   font-size: 70%;
   font-weight: lighter;
   position:relative;
@@ -136,6 +173,16 @@ img {
   z-index:10;
 }
 
+.bottom-toggle {
+  width: 100%;
+  color: #212122;
+  font-size: 70%;
+  font-weight: lighter;
+  position:absolute;
+  display:block;
+  z-index:10;
+}
+
 .visited{
   position:absolute;
   background-color:#212122;
@@ -159,7 +206,19 @@ h1{
 .contactheader {
   text-align: center;
 }
+.contactheader-toggle {
+  text-align: center;
+  color:black;
+}
 
+.create-toggle {
+  text-align: center;
+  color:black;
+}
+
+.create{
+  color:white;
+}
 
 #mb-3 {
   align-items: center;
@@ -306,7 +365,7 @@ h1{
 
 /* ---- particles.js container ---- */
 
-#particles-js {
+#tsparticles {
   width: 100%;
   height: 100%;
   background-color: #232741;
@@ -314,4 +373,10 @@ h1{
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-
+.button{
+  border: 14px white solid;
+  height:2vh;
+  cursor:pointer;
+  z-index: 1;
+  position:absolute;
+}

@@ -98,7 +98,7 @@ function Contact() {
           </Button>
         </Form>
         <div className="space"></div>
-        <p className="footer">This website was created using a ReactJS frontend, and a C# WebAPI backend (hosted on Microsoft Azure).</p>
+        <p className="create">This website was created using a ReactJS frontend, and a C# WebAPI backend (hosted on Microsoft Azure).</p>
 
       </div>
       <div className="footerTest">
