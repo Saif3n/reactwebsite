@@ -69,7 +69,7 @@ function Content() {
                             <br>
                             </br>
                             <br>
-                            </br> Please feel free to visit the website here: <a target="_blank" href="https://saif3n.github.io/stockapp/">https://saif3n.github.io/stockapp/</a>
+                            </br> Please feel free to visit the website here: <a target="_blank" rel="noopener noreferrer" href="https://saif3n.github.io/stockapp/">https://saif3n.github.io/stockapp/</a>
                         </p>
                         
 
@@ -88,7 +88,7 @@ function Content() {
                             <br>
                             </br>
                             <br>
-                            </br>Feel free to look at my endpoints here: <a target="_blank" href="https://github.com/Saif3n/publiccs">https://github.com/Saif3n/publiccs</a>
+                            </br>Feel free to look at my endpoints here: <a target="_blank" rel="noopener noreferrer" href="https://github.com/Saif3n/publiccs">https://github.com/Saif3n/publiccs</a>
                         </p>
                         
                     </div>
@@ -102,7 +102,7 @@ function Content() {
 
                         <h5>December 2022 - (in-development)</h5>
                         <p className="projectText">This project collects responses, and then aggregates this data. Once aggregated, the data is displayed on the website to view.
-                            <br></br><br></br> Watch this space to find out more! </p>
+                            <br></br><br></br> I have deliberately obfuscated the purpose of this project as it's still being developed. <br></br><br></br>Watch this space to find out more! </p>
                         
                     </div>
                 </div>
