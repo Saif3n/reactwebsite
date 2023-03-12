@@ -102,7 +102,7 @@ function Contact() {
 
       </div>
       <div className="footerTest">
-        <p>{value}</p>
+        <p className="person">{value}</p>
       </div>
     </div>
 
