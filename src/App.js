@@ -1,23 +1,26 @@
-import React from 'react';
-
 import './App.css';
-import ParticleBackground from './components/particleBackground';
-import AllUsers from './pages/AllUsers';
-import Contact from './pages/Contact';
-import Content from './pages/Content';
-import Welcome from './pages/Welcome';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import  Welcome  from "./components/Welcome";
 
 function App() {
-
-  return <div className="App">
-    <ParticleBackground/>
-    <Welcome/>
-    <AllUsers/>
-    <Content/>
-    <Contact/>
-
-  </div>
-
+  return (
+    <div className="App">
+      <Welcome/>
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

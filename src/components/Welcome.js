@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
 
-function Cookie() {
+function Welcome() {
     let country = '';
     let ip = '';
     
@@ -23,4 +23,4 @@ function Cookie() {
     }, [])
 }
 
-export default Cookie;
+export default Welcome;
