@@ -8,7 +8,7 @@ import axios from "axios";
 export const Footer = () => {
   const [value, setValue] = useState('');
   useEffect(() => {
-    axios.get("https://localhost:7024/GetLastUser").then((response) => {
+    axios.get("https://personalbackendreact.azurewebsites.net/GetLastUser").then((response) => {
       setValue(DOMPurify.sanitize(response.data.name) + " was the last user to leave a message.");
     });
   }, []);
