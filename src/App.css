@@ -126,7 +126,7 @@ select:focus {
     justify-content:flex-end;
   }
 
-  .container {
+  .container-banner {
     display:flex;
     flex-direction:row-reverse;
     margin-top: 5vh;
@@ -136,6 +136,14 @@ select:focus {
     overflow: auto;
   }
 
+  .container {
+    margin-top: 5vh;
+    min-height: 5vh;
+    padding-top: 5%;
+    overflow: auto;
+  }
+
+
   .banner {
     padding-top: 5vh !important;
   }
@@ -143,7 +151,7 @@ select:focus {
 
 .Typewriter {
   width: 100%;
-  color: rgb(0, 60, 255);
+  color: #003cff;
 }
 
 p.success {
@@ -182,7 +190,7 @@ nav.navbar {
 nav.navbar.scrolled {
 
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #252627;
 }
 
 nav.navbar a.navbar-brand {
