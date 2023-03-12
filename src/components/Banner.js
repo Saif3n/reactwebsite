@@ -11,13 +11,14 @@ export const Banner = () => {
 
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="home" style={{ transition: "height 0.3s ease" }}>
       <Container>
         <Row className="aligh-items-center">
-          <h1>{`Hi! I'm Nicholas Wu.`}
+          <h1 style={{ transition: "height 0.3s ease" }}>{`Hi! I'm Nicholas Wu.`}
+          
 
             <TrackVisibility>
-            
+
               {({ isVisible }) => {
 
                 if (!isVisible && type){
@@ -26,7 +27,7 @@ export const Banner = () => {
                   type.start();
                 }
                 return (
-                  <Typewriter
+                  <Typewriter style={{ transition: "height 0.3s ease" }}
                     className="secondtype"
                     onInit={(typewriter) => {
                       setType(typewriter)
