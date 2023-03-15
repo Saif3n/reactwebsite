@@ -56,7 +56,7 @@ export const Banner = () => {
 
             <div>
 
-              <p>I'm a final year Computer Science student passionate about full-stack languages and frameworks. <br></br><br></br>In my free time I love playing badminton, walking my border collie, and exploring nifty cafes around Auckland.</p>
+              <p>I'm a final year Computer Science student passionate about full-stack development, building webAPIs, and experimenting with new frameworks. <br></br><br></br>In my free time I love playing badminton, walking my border collie, and exploring nifty cafes around Auckland.</p>
               <button onClick={() => {
                 console.log('connect');
                 window.location.hash = '#connect';

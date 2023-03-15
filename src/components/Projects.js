@@ -7,7 +7,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
+import projImg6 from "../assets/img/image.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -19,34 +19,42 @@ export const Projects = () => {
     {
       title: "Personal Portfolio",
       imgUrl: projImg2,
+      languages: "React, C#",
     },
     {
       title: "NZ Company Wait Times",
       description: "A website that allows kiwis to leave reviews about a company's wait time via phone.",
       imgUrl: projImg1,
       link: "https://saif3n.github.io/usertime/",
+      languages: "React, C#",
 
     },
     {
       title: "F1 Sponsor Stock Website",
-      description: "(minimum viable product stage) This website allows you to see a graph of the closing price for each sponsor, and visual cues provide insight as to how much the price increased or decreased after each race.",
+      description: "(minimum viable product) This website allows you to see a graph of the closing price for each F1 sponsor.",
       imgUrl: projImg3,
       link: "https://saif3n.github.io/stockapp/",
+      languages: "React, C#, SQL, d3.js",
     },
     {
       title: "Central C# Endpoints/webAPIs",
       description: "A repository containing some of C# endpoints used in my personal projects.",
       imgUrl: projImg4,
       link: "https://github.com/Saif3n/publiccs",
+      languages: "C#",
     },
     {
       title: "Linux Cybersecurity Tutorial Website",
       description: "(unfinished/in-development)",
       imgUrl: projImg5,
       link:"https://github.com/Saif3n/overthewire-passwords",
+      languages: "React, Linux",
     },
     {
+      title:"Blackjack Project - Java",
+      description: "A Java app which allows users to play blackjack against bots with pre-determined strategies.",
       imgUrl: projImg6,
+      languages:"Java",
     },
   ];
   return (

@@ -636,6 +636,13 @@ i {
   cursor:pointer;
 }
 
+.proj-imgbx img{
+  min-height:25vh;
+
+}
+h6{
+  margin-top:2vh !important;
+}
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #160ca3 -5.91%, #0657c2 111.58%);
