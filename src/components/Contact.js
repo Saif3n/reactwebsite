@@ -60,7 +60,7 @@ export const Contact = () => {
       setButtonText("Oops!")
 
     });
-
+    setFormDetails(formInitialDetails);
   };
 
   return (
