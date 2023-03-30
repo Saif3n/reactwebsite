@@ -2,14 +2,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import React from 'react';
 
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/image.png";
+import projImg1 from "../assets/img/project-img1.webp";
+import projImg2 from "../assets/img/project-img2.webp";
+import projImg3 from "../assets/img/project-img3.webp";
+import projImg4 from "../assets/img/project-img4.webp";
+import projImg5 from "../assets/img/project-img5.webp";
+import projImg6 from "../assets/img/image.webp";
 
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../assets/img/color-sharp2.webp";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import React from 'react';
 
-import contactImage from "../assets/img/coder.png";
+import contactImage from "../assets/img/coder.webp";
 import 'animate.css';
 import axios from "axios";
 import { send } from 'emailjs-com';
