@@ -772,7 +772,12 @@ h6{
   margin-top: 25px;
   border-radius: 0;
   position: relative;
-  transition: 5.3s ease-in-out;
+  transition: 1.3s ease-in-out;
+}
+.contact-form-button.disabled {
+  background-color: #636464;
+  cursor: not-allowed;
+  color: #fff;
 }
 
 .contact form button span {
@@ -784,21 +789,6 @@ h6{
   color: #fff;
 }
 
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 5.3s ease-in-out;
-}
-
-.contact form button:hover::before {
-  width: 100%;
-}
 
 /************ Footer Css ************/
 .footer {
@@ -889,4 +879,8 @@ h6{
 
 .animate__backInLeft {
   --animate-duration: 3s;
+}
+.disabled{
+  background-color: lightgray;
+  cursor: not-allowed;
 }

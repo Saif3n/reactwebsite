@@ -54,6 +54,7 @@ export const Projects = () => {
       title:"Blackjack Project - Java",
       description: "A Java app which allows users to play blackjack against bots with pre-determined strategies.",
       imgUrl: projImg6,
+      link:"https://github.com/Saif3n/javabot",
       languages:"Java",
     },
   ];

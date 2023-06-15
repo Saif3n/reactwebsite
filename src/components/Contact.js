@@ -17,6 +17,7 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
+  const [isDisabled, setIsDisabled] = useState(false);
 
 
   const onFormUpdate = (category, value) => {
@@ -60,6 +61,7 @@ export const Contact = () => {
       setButtonText("Oops!")
 
     });
+    setIsDisabled(true);
     setFormDetails(formInitialDetails);
   };
 
@@ -89,7 +91,9 @@ export const Contact = () => {
 
                     <Col size={12} sm={12}className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <button type="submit" disabled={isDisabled} className={`contact-form-button ${isDisabled ? 'disabled' : ''}`}>
+                        <span>{buttonText}</span>
+                    </button>
                     </Col>
                     {
                       status.message &&

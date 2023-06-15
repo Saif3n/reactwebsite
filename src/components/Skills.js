@@ -43,6 +43,12 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
+                  <i className="devicon-azure-plain"></i>
+                  <h5>Microsoft Azure</h5>
+                </div>
+
+
+                <div className="item">
                   <i className="devicon-react-original"></i>
                   <h5>React</h5>
                 </div>
@@ -55,6 +61,11 @@ export const Skills = () => {
                 <div className="item">
                   <i className="devicon-java-plain"></i>
                   <h5>Java</h5>
+                </div>
+                
+                <div className="item">
+                  <i class="devicon-python-plain"></i>
+                  <h5>Python</h5>
                 </div>
 
                 <div className="item">
@@ -77,16 +88,7 @@ export const Skills = () => {
                   <h5>SQLite</h5>
                 </div>
 
-                <div className="item">
-                  <i className="devicon-azure-plain"></i>
-                  <h5>Microsoft Azure</h5>
-                </div>
-
-                <div className="item">
-                  <i className="devicon-linux-plain"></i>
-                  <h5>Linux</h5>
-                </div>
-
+                
               </Carousel>
             </div>
           </div>
