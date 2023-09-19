@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.93f07d8e.chunk.css",
-  "main.js": "/static/js/main.22f83fe8.chunk.js",
-  "main.js.map": "/static/js/main.22f83fe8.chunk.js.map",
+  "main.js": "/static/js/main.8c39ee30.chunk.js",
+  "main.js.map": "/static/js/main.8c39ee30.chunk.js.map",
   "static/js/1.09ea3d99.chunk.js": "/static/js/1.09ea3d99.chunk.js",
   "static/js/1.09ea3d99.chunk.js.map": "/static/js/1.09ea3d99.chunk.js.map",
   "static/css/2.648768b9.chunk.css": "/static/css/2.648768b9.chunk.css",
@@ -11,7 +11,7 @@
   "runtime~main.js.map": "/static/js/runtime~main.4b229bea.js.map",
   "static/media/nav-icon1.svg": "/static/media/nav-icon1.dff2b624.svg",
   "static/media/color-sharp.webp": "/static/media/color-sharp.bf917ab1.webp",
-  "static/media/project-img1.webp": "/static/media/project-img1.0cd18e2b.webp",
+  "static/media/project-img1.webp": "/static/media/project-img1.5d2b9008.webp",
   "static/media/project-img2.webp": "/static/media/project-img2.a0488826.webp",
   "static/media/project-img3.webp": "/static/media/project-img3.767408bd.webp",
   "static/media/project-img4.webp": "/static/media/project-img4.f030c87b.webp",
@@ -19,11 +19,11 @@
   "static/media/image.webp": "/static/media/image.d5b373f5.webp",
   "static/media/color-sharp2.webp": "/static/media/color-sharp2.da82470a.webp",
   "static/media/coder.webp": "/static/media/coder.284d703c.webp",
-  "static/media/App.css": "/static/media/x219hh4w95881.83924589.webp",
+  "static/media/App.css": "/static/media/CentraNo2-Book.386f0594.ttf",
   "static/media/styles.css": "/static/media/revicons.2feb69cc.eot",
   "static/css/main.93f07d8e.chunk.css.map": "/static/css/main.93f07d8e.chunk.css.map",
   "static/css/2.648768b9.chunk.css.map": "/static/css/2.648768b9.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.824e73989ffb6506d7ccbf4128141464.js": "/precache-manifest.824e73989ffb6506d7ccbf4128141464.js",
+  "precache-manifest.502a4c634bb7dfaa77a0a4829cca65d5.js": "/precache-manifest.502a4c634bb7dfaa77a0a4829cca65d5.js",
   "service-worker.js": "/service-worker.js"
 }

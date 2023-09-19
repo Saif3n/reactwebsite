@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "22f83fe80e3672dcc8a9",
+    "revision": "8c39ee30c9612944b6dc",
     "url": "/static/css/main.93f07d8e.chunk.css"
   },
   {
-    "revision": "22f83fe80e3672dcc8a9",
-    "url": "/static/js/main.22f83fe8.chunk.js"
+    "revision": "8c39ee30c9612944b6dc",
+    "url": "/static/js/main.8c39ee30.chunk.js"
   },
   {
     "revision": "09ea3d9923b8c05c198b",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/color-sharp.bf917ab1.webp"
   },
   {
-    "revision": "0cd18e2bcbe650f48649bda9b40c73c1",
-    "url": "/static/media/project-img1.0cd18e2b.webp"
+    "revision": "5d2b9008c072a825a9ea9f3ef8cb447e",
+    "url": "/static/media/project-img1.5d2b9008.webp"
   },
   {
     "revision": "a0488826fa42a34d39e1c55a455763bb",
@@ -64,20 +64,20 @@ self.__precacheManifest = [
     "url": "/static/media/coder.284d703c.webp"
   },
   {
-    "revision": "63911e8535278ced52b8a37e819f6f5d",
-    "url": "/static/media/CentraNo2-Medium.63911e85.ttf"
+    "revision": "839245890b1d514d8ee3b6e68b192fef",
+    "url": "/static/media/x219hh4w95881.83924589.webp"
   },
   {
     "revision": "4ea3794d631bedab7999678f46b0a162",
     "url": "/static/media/CentraNo2-Bold.4ea3794d.ttf"
   },
   {
-    "revision": "386f05946a76935fcabf319affff517a",
-    "url": "/static/media/CentraNo2-Book.386f0594.ttf"
+    "revision": "63911e8535278ced52b8a37e819f6f5d",
+    "url": "/static/media/CentraNo2-Medium.63911e85.ttf"
   },
   {
-    "revision": "839245890b1d514d8ee3b6e68b192fef",
-    "url": "/static/media/x219hh4w95881.83924589.webp"
+    "revision": "386f05946a76935fcabf319affff517a",
+    "url": "/static/media/CentraNo2-Book.386f0594.ttf"
   },
   {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/revicons.2feb69cc.eot"
   },
   {
-    "revision": "90ef2677ceea5a74ea3c81d4ad99f477",
+    "revision": "f5719ab8039a09969068b050c166c2b8",
     "url": "/index.html"
   }
 ];
