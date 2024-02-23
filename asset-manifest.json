@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.93f07d8e.chunk.css",
-  "main.js": "/static/js/main.28655e1f.chunk.js",
-  "main.js.map": "/static/js/main.28655e1f.chunk.js.map",
+  "main.js": "/static/js/main.6f68312a.chunk.js",
+  "main.js.map": "/static/js/main.6f68312a.chunk.js.map",
   "static/js/1.09ea3d99.chunk.js": "/static/js/1.09ea3d99.chunk.js",
   "static/js/1.09ea3d99.chunk.js.map": "/static/js/1.09ea3d99.chunk.js.map",
   "static/css/2.648768b9.chunk.css": "/static/css/2.648768b9.chunk.css",
@@ -19,11 +19,11 @@
   "static/media/image.webp": "/static/media/image.d5b373f5.webp",
   "static/media/color-sharp2.webp": "/static/media/color-sharp2.da82470a.webp",
   "static/media/coder.webp": "/static/media/coder.284d703c.webp",
-  "static/media/App.css": "/static/media/CentraNo2-Book.386f0594.ttf",
+  "static/media/App.css": "/static/media/CentraNo2-Bold.4ea3794d.ttf",
   "static/media/styles.css": "/static/media/revicons.2feb69cc.eot",
   "static/css/main.93f07d8e.chunk.css.map": "/static/css/main.93f07d8e.chunk.css.map",
   "static/css/2.648768b9.chunk.css.map": "/static/css/2.648768b9.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.538f7a77d75721eebaa349002f907e2d.js": "/precache-manifest.538f7a77d75721eebaa349002f907e2d.js",
+  "precache-manifest.1c9a4b8cf79b32e83ba667e93487831c.js": "/precache-manifest.1c9a4b8cf79b32e83ba667e93487831c.js",
   "service-worker.js": "/service-worker.js"
 }
