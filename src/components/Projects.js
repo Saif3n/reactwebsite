@@ -25,7 +25,7 @@ export const Projects = () => {
       title: "NZ Company Wait Times",
       description: "A website that allows kiwis to leave reviews about a company's wait time via phone.",
       imgUrl: projImg1,
-      link: "https://saif3n.github.io/usertime/",
+     
       languages: "React, C#",
 
     },
@@ -33,7 +33,7 @@ export const Projects = () => {
       title: "F1 Sponsor Stock Website",
       description: "(minimum viable product) This website allows you to see a graph of the closing price for each F1 sponsor.",
       imgUrl: projImg3,
-      link: "https://saif3n.github.io/stockapp/",
+  
       languages: "React, C#, SQL, d3.js",
     },
     {
