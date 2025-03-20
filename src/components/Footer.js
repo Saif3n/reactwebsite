@@ -25,7 +25,7 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon-footer">
-              <a href="https://www.linkedin.com/in/nicholas-wu-lnkdin/"  target="_blank"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/urlnicholaswu/"  target="_blank"><img src={navIcon1} alt="Icon" /></a>
 
             </div>
             <p>Nicholas Wu - 2023</p>
