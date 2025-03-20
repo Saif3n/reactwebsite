@@ -33,6 +33,11 @@ export const Skills = () => {
               <p></p>
               <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2500} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
+                  <i className="devicon-typescript-plain"></i>
+                  <h5>Typescript</h5>
+                </div>
+
+                <div className="item">
                   <i className="devicon-csharp-line"></i>
                   <h5>C#</h5>
                 </div>
@@ -43,8 +48,8 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  <i className="devicon-azure-plain"></i>
-                  <h5>Microsoft Azure</h5>
+                  <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                  <h5>AWS</h5>
                 </div>
 
 
@@ -62,7 +67,7 @@ export const Skills = () => {
                   <i className="devicon-java-plain"></i>
                   <h5>Java</h5>
                 </div>
-                
+
                 <div className="item">
                   <i class="devicon-python-plain"></i>
                   <h5>Python</h5>
@@ -83,12 +88,7 @@ export const Skills = () => {
                   <h5>MySQL</h5>
                 </div>
 
-                <div className="item">
-                  <i className="devicon-sqlite-plain"></i>
-                  <h5>SQLite</h5>
-                </div>
 
-                
               </Carousel>
             </div>
           </div>
