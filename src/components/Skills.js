@@ -48,7 +48,7 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                  <i className="devicon-amazonwebservices-plain-wordmark"></i>
                   <h5>AWS</h5>
                 </div>
 
@@ -69,7 +69,7 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  <i class="devicon-python-plain"></i>
+                  <i className="devicon-python-plain"></i>
                   <h5>Python</h5>
                 </div>
 
