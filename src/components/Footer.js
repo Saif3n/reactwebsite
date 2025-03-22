@@ -28,7 +28,7 @@ export const Footer = () => {
               <a href="https://www.linkedin.com/in/urlnicholaswu/"  target="_blank"><img src={navIcon1} alt="Icon" /></a>
 
             </div>
-            <p>Nicholas Wu - 2023</p>
+            <p>Nicholas Wu - 2025</p>
           </Col>
         </Row>
       </Container>
