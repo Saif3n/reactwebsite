@@ -39,7 +39,7 @@ export const Banner = () => {
                         .typeString("n avid F1 fan.")
                         .pauseFor(1600)
                         .deleteChars(25)
-                        .typeString("An analyst at Deloitte.")
+                        .typeString("A Consultant at Deloitte.")
                         .pauseFor(1600)
                         .deleteAll(60)
                         .typeString("Welcome to my website!")
@@ -56,7 +56,7 @@ export const Banner = () => {
 
             <div>
 
-              <p>I'm an Analyst at Deloitte, within the Software Engineering team; passionate about full-stack development, building projects using cloud services, and experimenting with new frameworks. <br></br><br></br>In my free time I love playing badminton, walking my border collie, and going for a walk around beautiful areas of Sydney.</p>
+              <p>I'm a Consultant at Deloitte, within the Software Engineering team; passionate about full-stack development, building projects using cloud services, and experimenting with new frameworks. <br></br><br></br>In my free time I love playing badminton, watching F1, and going for a walk around beautiful Sydney.</p>
               <button onClick={() => {
                 console.log('connect');
                 window.location.hash = '#connect';
