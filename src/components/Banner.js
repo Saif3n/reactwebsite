@@ -55,7 +55,6 @@ export const Banner = () => {
 
 
             <div>
-
               <p>I'm a Consultant at Deloitte, within the Software Engineering team; passionate about full-stack development, building projects using cloud services, and experimenting with new frameworks. <br></br><br></br>In my free time I love playing badminton, watching F1, and going for a walk around beautiful Sydney.</p>
               <button onClick={() => {
                 console.log('connect');

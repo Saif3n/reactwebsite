@@ -42,25 +42,15 @@ export const Contact = () => {
         .post("https://personalbackendreact.azurewebsites.net/Register", payload)
         .then((response) => {
           console.log('Azure post successful.', response.status, response.text);
+          console.log('Successfully sent!', response.status, response.text);
+          setStatus({success: true, message: "Message sent successfully."})
+          setButtonText("Sent!")
         }).catch((error) => {
           console.log('Azure post unsuccessful.', error.status, error.text);
+          console.log('Email service failed...', error);
+          setStatus({success:false, message: "Sorry, that didn't work. Why not try reaching out on LinkedIn?" })
+          setButtonText("Oops!")
         });
-
-    send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      formDetails,
-      process.env.REACT_APP_PUBLIC_KEY
-    ).then((response) => {
-      console.log('Successfully sent!', response.status, response.text);
-      setStatus({success: true, message: "Message sent successfully."})
-      setButtonText("Sent!")
-    }).catch((error) => {
-      console.log('Email service failed...', error);
-      setStatus({success:false, message: "Sorry, that didn't work. Why not try reaching out on LinkedIn?" })
-      setButtonText("Oops!")
-
-    });
     setIsDisabled(true);
     setFormDetails(formInitialDetails);
   };
