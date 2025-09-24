@@ -40,21 +40,18 @@ export const Projects = () => {
       title: "Central C# Endpoints/webAPIs",
       description: "A repository containing some of C# endpoints used in my personal projects.",
       imgUrl: projImg4,
-      link: "https://github.com/Saif3n/publiccs",
       languages: "C#",
     },
     {
       title: "Linux Cybersecurity Tutorial Website",
       description: "(unfinished/in-development)",
       imgUrl: projImg5,
-      link:"https://github.com/Saif3n/overthewire-passwords",
       languages: "React, Linux",
     },
     {
       title:"Blackjack Project - Java",
       description: "A Java app which allows users to play blackjack against bots with pre-determined strategies.",
       imgUrl: projImg6,
-      link:"https://github.com/Saif3n/javabot",
       languages:"Java",
     },
   ];
