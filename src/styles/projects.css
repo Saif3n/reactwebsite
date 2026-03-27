@@ -1,0 +1,55 @@
+/* Ensure each column/card is same height and image is cropped consistently */
+.project-col {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Make the ProjectCard fill the column */
+.project-col > .project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Target images inside the card and make them crop consistently */
+.project-card .proj-imgbx img {
+  width: 100%;
+  height: 180px; /* fixed image area height - tweak as needed */
+  object-fit: cover; /* crop to fill */
+  display: block;
+  border-radius: 6px;
+}
+
+/* Make card body take remaining space and clamp long text */
+.project-card .proj-txtx {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+/* Clamp description to 3 lines */
+.project-card .proj-txtx span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+/* Optional: make titles consistent size */
+.project-card .proj-txtx h4 {
+  margin: 0.25rem 0;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.project-card .proj-txtx h6 {
+  margin-top: auto; /* push languages to bottom */
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff; /* make languages text white for better visibility */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+}

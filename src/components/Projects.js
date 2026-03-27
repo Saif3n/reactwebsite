@@ -12,6 +12,7 @@ import projImg6 from "../assets/img/image.webp";
 import colorSharp2 from "../assets/img/color-sharp2.webp";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import "../styles/projects.css";
 
 export const Projects = () => {
 
@@ -23,7 +24,7 @@ export const Projects = () => {
     },
     {
       title: "NZ Company Wait Times",
-      description: "A website that allows kiwis to leave reviews about a company's wait time via phone.",
+      description: "Crowd-sourcing wait times of NZ companies via phone calls.",
       imgUrl: projImg1,
      
       languages: "React, C#",
@@ -31,7 +32,7 @@ export const Projects = () => {
     },
     {
       title: "F1 Sponsor Stock Website",
-      description: "(minimum viable product) This website allows you to see a graph of the closing price for each F1 sponsor.",
+      description: "Visualise stock prices of F1 sponsors before and after each race.",
       imgUrl: projImg3,
   
       languages: "React, C#, SQL, d3.js",
@@ -70,7 +71,9 @@ export const Projects = () => {
                     className={`animate__animated ${isVisible ? 'animate__backInLeft' : ''}`}
                   >
                     {projects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
+                      <Col key={index} sm={6} md={4} className="project-col mb-4 d-flex">
+                        <ProjectCard {...project} />
+                      </Col>
                     ))}
                   </Row>
                 </div>
