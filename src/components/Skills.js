@@ -48,8 +48,6 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  <i className="devicon-amazonwebservices-plain-wordmark"></i>
-                  <h5>AWS</h5>
                   <i class="devicon-amazonwebservices-plain-wordmark"></i>
                   <h5>AWS</h5>
                 </div>
@@ -91,7 +89,7 @@ export const Skills = () => {
                   <h5>MySQL</h5>
                 </div>
 
-                
+
 
 
               </Carousel>
